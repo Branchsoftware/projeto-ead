@@ -2,4 +2,4 @@
 
 @yield('conteudo')
 
-@include('layout.include.footer')
+@include('layout.includes.footer')

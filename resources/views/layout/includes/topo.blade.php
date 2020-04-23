@@ -7,7 +7,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-        <a class="btn btn-primary" href="#">Branch Cursos</a>&ensp; 
+        <a class="btn btn-primary" href=" {{route('home')}} ">Branch Cursos</a>&ensp; 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,7 +37,7 @@
               @endif
           </ul>  
             <a class="btn btn-outline-secondary" href="">Ensine na Branch</a>&emsp;&emsp;                
-            <a class="btn btn-outline-primary" href="">Fazer Login</a>&ensp;  
-            <a class="btn btn-danger" href="">Cadastre-se</a>         
+            <a class="btn btn-outline-primary" href="{{route('site.login.index')}}">Fazer Login</a>&ensp;  
+            <a class="btn btn-danger" href="{{route('site.cadastro.index')}}">Cadastre-se</a>         
         </div>
       </nav>

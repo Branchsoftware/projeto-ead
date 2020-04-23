@@ -13,3 +13,6 @@
 
 
 Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/cadastro','CadastroController@index')->name('site.cadastro.index');
+Route::post('/cadastro','CadastroController@cadastrar')->name('site.cadastro.cadastrar');

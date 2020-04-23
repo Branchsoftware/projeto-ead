@@ -14,5 +14,10 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
+//Rotas para o cadastro
 Route::get('/cadastro','CadastroController@index')->name('site.cadastro.index');
 Route::post('/cadastro','CadastroController@cadastrar')->name('site.cadastro.cadastrar');
+
+//Rotas para Login
+Route::get('/login','LoginController@index')->name('site.login.index');
+Route::post('/login','LoginController@entrar')->name('site.login.entrar');
